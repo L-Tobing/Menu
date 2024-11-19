@@ -1,0 +1,237 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  margin: auto;
+  width: 60%;
+  height: 10%;
+  background-color: lightskyblue;
+  border-radius: 0 0 55px 55px;
+}
+.container .daftar h2 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container-menu {
+  margin: 20px auto;
+  background-color: lightskyblue;
+  width: 100%;
+  height: 90%px;
+  border-radius: 10px;
+}
+.container-menu .menu h3 {
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cari {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.container-menu .menu .cari input {
+  position: relative;
+  padding: 2.5px 5px;
+  width: 350px;
+  font-size: 18px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0px 2px 5px rgba(rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 0.2);
+  transition: 0.5s;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container-menu .menu .cari i {
+  position: relative;
+  right: 25px;
+  top: 4px;
+  cursor: pointer;
+  color: #555;
+}
+.icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.icon i {
+  margin-left: 100px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 100px;
+}
+.fa-bowl-food {
+  font-size: 50px;
+}
+.fa-martini-glass-citrus {
+  font-size: 50px;
+}
+.main {
+  width: 99%;
+  height: 70%;
+  background-color: salmon;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px;
+  position: relative;
+}
+.main .judul {
+  text-transform: uppercase;
+  color: white;
+  background-color: lightskyblue;
+  width: 50%;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+  font-family: sans-serif;
+}
+.main .judul h3 {
+  text-align: center;
+  font-size: 1rem;
+}
+.container-card {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow-y: hidden;
+}
+.card {
+  flex-basis: 250px;
+  flex-shrink: 0;
+  padding: 10px;
+  margin: 30px 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px;
+  transition: 0.5s;
+  transform: scale(0.9);
+}
+.card:hover {
+  transform: scale(1);
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  border-radius: 8px;
+}
+.nama-makanan {
+  position: relative;
+  top: 10px;
+}
+.nama-makanan h4 {
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+}
+.nama-makanan .lokasi i {
+  position: relative;
+  left: 90%;
+  float: left;
+  top: 10px;
+}
+.nama-makanan p {
+  position: relative;
+  font-size: 100%;
+  left: -15px;
+  top: 10px;
+}
+.nama-makanan i {
+  position: relative;
+  top: 20px;
+  left: -15;
+}
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+
+.footer-content {
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.footer-section {
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-section {
+    margin: 20px 0;
+  }
+  /* Copyright Section */
+  .footer-bottom {
+    background-color: #222;
+    color: #bbb;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 580px) {
+  .main .judul h3 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .container {
+    margin: auto;
+    width: 100%;
+    height: 10%;
+    background-color: lightskyblue;
+    border-radius: 0 0 55px 55px;
+  }
+  .container-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  .card {
+    flex-basis: 150px; /* Tetapkan ukuran awal kartu */
+    flex-shrink: 0; /* Cegah mengecil */
+    padding: 10px;
+    margin: 30px 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+    transform: scale(0.9);
+  }
+}
